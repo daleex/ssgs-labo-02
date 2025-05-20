@@ -23,8 +23,46 @@ Buona analisi e buon lavoro!
 
 ## Installazione e Avvio
 
-*(Questa sezione dovrà essere completata dallo studente come parte dell'Esercizio 1, includendo i comandi per installare le dipendenze ed eseguire l'applicazione e i test).*
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/daleex/ssgs-labo-02.git
+    ```
+
+2. Install the dependencies using npm:
+
+    ```bash
+    npm install
+    ```
+
+    This will install all the required packages as specified in `package.json`.
 
 ---
 
-*Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
+## Usage
+
+Run the program:
+
+```bash
+npm start
+```
+
+## Code Coverage
+
+After running npm test, a folder named coverage/ will be generated. It contains an HTML report.
+
+To view it:
+
+1. Open coverage/lcov-report/index.html in your browser.
+2. You'll see a visual breakdown of which lines and functions are tested.
+
+## CI/CD with GitHub Actions
+
+This project includes a GitHub Actions workflow located at .github/workflows/test.yml.
+
+It automatically:
+
+- Runs tests and generates coverage on every push and pull_request.
+- Uploads the full coverage report as an artifact (downloadable from the GitHub Actions page).
+
+You can find the latest runs and reports under the Actions tab of the repository.

@@ -17,3 +17,13 @@ dist/
 .coverage
 .pytest_cache/
 htmlcov/
+
+# modules
+node_modules
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+logs/
