@@ -23,46 +23,55 @@ Buona analisi e buon lavoro!
 
 ## Installazione e Avvio
 
-1. Clone the repository:
+1. Clona la repository:
 
     ```bash
     git clone https://github.com/daleex/ssgs-labo-02.git
     ```
 
-2. Install the dependencies using npm:
+2. Installa le dipendenze npm:
 
     ```bash
     npm install
     ```
 
-    This will install all the required packages as specified in `package.json`.
+    Questo installerà tutti i pacchetti richiesti come specificato in `package.json`.
 
 ---
 
-## Usage
+## Utilizzo
 
-Run the program:
+Inizializza:
 
 ```bash
-npm start
+node index.js <numero_funzione> <stringa_input> [parametro_aggiuntivo]
+```
+Scegli un numero dalla lista delle funzioni:
+
+```js
+console.error("Numero funzione:");
+    console.error("  1: Inverti Stringa (reverseString)");
+    console.error("  2: Controlla Palindromo (isPalindrome)");
+    console.error("  3: Tronca Stringa (truncateString) - richiede [lunghezza_massima]");
+    console.error("  4: Conta Caratteri (countCharacters)");
 ```
 
 ## Code Coverage
 
-After running npm test, a folder named coverage/ will be generated. It contains an HTML report.
+Dopo aver eseguito npm test, verrà generata una cartella chiamata coverage/ che contiene un report HTML.
 
-To view it:
+Per visualizzarlo:
 
-1. Open coverage/lcov-report/index.html in your browser.
-2. You'll see a visual breakdown of which lines and functions are tested.
+1. Apri `coverage/lcov-report/index.html` nel tuo browser.
+2. Vedrai una rappresentazione visiva delle linee e delle funzioni coperte dai test.
 
-## CI/CD with GitHub Actions
+## CI/CD con GitHub Actions
 
-This project includes a GitHub Actions workflow located at .github/workflows/test.yml.
+Questo progetto include un workflow di GitHub Actions in .github/workflows/test.yml.
 
-It automatically:
+Esegue automaticamente:
 
-- Runs tests and generates coverage on every push and pull_request.
-- Uploads the full coverage report as an artifact (downloadable from the GitHub Actions page).
+- I test e genera la copertura ad ogni push e pull_request.
+- Carica il report completo della copertura come artifact (scaricabile dalla pagina GitHub Actions).
 
-You can find the latest runs and reports under the Actions tab of the repository.
+Puoi trovare le ultime esecuzioni e report nella scheda Actions del repository.

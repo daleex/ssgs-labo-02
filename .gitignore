@@ -18,8 +18,9 @@ dist/
 .pytest_cache/
 htmlcov/
 
-# modules
-node_modules
+# modules and coverage
+node_modules/
+coverage/
 
 # macOS system files
 .DS_Store
