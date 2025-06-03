@@ -36,10 +36,10 @@ test('truncate string emptystring 0',()=>{
     expect(truncateString("emptystring",0)).toBe("...");
 });
 
-test('count characters of string pruple',()=>{
-    expect(countCharacters("purple")).toBe("{p: 2, u: 1, r: 1, l: 1, e: 1}");
+test('count characters of string purple',()=>{
+    expect(countCharacters("purple")).toEqual({p: 2, u: 1, r: 1, l: 1, e: 1});
 });
 
 test('count characters of string concatena',()=>{
-    expect(countCharacters("concatena")).toBe("{c: 2, o: 1, n: 2, a: 2, t: 1, e: 1}");
+    expect(countCharacters("concatena")).toEqual({c: 2, o: 1, n: 2, a: 2, t: 1, e: 1});
 });
